@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>indra jaya</title>
+  <style>
+    
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-image: url("indrajaya.jpg"); 
+      background-size: cover;
+      background-position: center;
+      color: rgb(244, 244, 244);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #363f49;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      background: rgb(255, 252, 252);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .hobby img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    
+
+    footer {
+     background-image: url("indrajaya.jpg");
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer a {
+      color: #00ffff;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+    
+  </style>
+  <style>
+    
+/* Animasi masuk dari bawah */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi masuk dari samping */
+@keyframes fadeSlideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Efek muncul umum untuk elemen */
+.fade-in {
+  animation: fadeSlideIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+/* Efek muncul khusus untuk teks header dari kiri */
+.fade-left {
+  animation: fadeSlideLeft 1s ease-out forwards;
+  opacity: 0;
+}
+
+/* Efek hover untuk kartu hobi */
+#hobi div[style*="width: 280px;"] {
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeSlideIn 1s ease-out;
+}
+
+#hobi div[style*="width: 280px;"]:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Transisi umum untuk semua elemen */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animasi background halus */
+body {
+  background: linear-gradient(135deg, #f0f4ff, #e0e9ff);
+  animation: fadeSlideIn 1s ease-in-out;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  color: #333;
+}
+
+/* Judul utama animasi */
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  animation: fadeSlideLeft 1s ease-in-out;
+}
+
+/* Header paragraf */
+header p {
+  font-size: 1.2em;
+  color: #555;
+  animation: fadeSlideIn 1s ease-in-out;
+}
+
+/* Efek tombol jika ada */
+button, a.btn {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+button:hover, a.btn:hover {
+  background-color: #357ABD;
+  transform: scale(1.05);
+}
+body {
+    background-image: url('wl.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+</style>
+
+</head>
+
+<body>
+<audio id="bg-music" loop>
+  <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="document.getElementById('bg-music').play()">▶️ Putar Musik</button>
+<button onclick="document.getElementById('bg-music').pause()">⏸️ Pause</button>
+
+
+
+<header>
+
+
+  <h1 style="color:rgb(255, 251, 251); text-shadow: 1px 1px 3px rgb(0, 0, 0);">I N D R A</h1>
+  <p style="color:rgb(255, 255, 255); text-shadow: 1px 1px 2px black;">MAHASISWA TRPL | UNDIKSHA | SINGARAJA</p>
+</header>
+
+<nav>
+  <a  href="#profil">Profil</a>
+  <a  href="#pendidikan">Pendidikan</a>
+  <a href="#hobi">Hobi</a>
+  <a  href="#kontak"color>Kontak</a>
+</nav>
+
+<section id="profil" style="background: url('bg.jpeg') center/cover no-repeat; padding: 30px; border-radius: 15px; color: white;">
+  
+  <h2 style="background: linear-gradient(to right, #0f0f0f, #555); padding: 10px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.5); color: gold;">Profil Pribadi</h2>
+
+  <div style="display: flex; justify-content: center; gap: 25px; margin-top: 25px;">
+    <img src="kiri.jpg" alt="Foto Kiri" width="250" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.7);">
+    <img src="tengah.jpg" alt="Foto Saya" width="300" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.7);">
+    <img src="kanan.jpg" alt="Foto Kanan" width="250" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.7);">
+  </div>
+
+  <div style="height: 3px; width: 80%; margin: 30px auto; background: linear-gradient(to right, #000, #ccc, #000);"></div>
+
+ <table style="margin: auto; text-align: left;font-size: 18px;color: white;
+  background-image: url('hitam.jpg'); 
+  background-size: cover; background-position: center; border-radius: 15px;padding: 20px;box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  width: 80%;">
+    <tr><td><strong >NAMA</strong></td><td>:</td><td>Komang indrajaya Darmawiguna</td></tr>
+    <tr><td><strong >TEMPAT, TGL LAHIR</strong></td><td>:</td><td >Karangasem, 14 Mei 2006</td></tr>
+    <tr><td><strong >JENIS KELAMIN</strong></td><td>:</td><td>Laki-laki</td></tr>
+    <tr><td><strong>ALAMAT</strong></td><td>:</td><td>Karangasem - Bali</td></tr>
+    <tr><td><strong >STATUS</strong></td><td>:</td><td>Belum Menikah</td></tr>
+    <tr><td><strong >MOTIVASI</strong></td><td>:</td><td>"Keberhasilan dimulai dari proses"</td></tr>
+  </table>
+</section>
+
+
+  <section id="Pendidikan" style="background: url('bg.jpeg') center/cover no-repeat; padding: 30px; border-radius: 15px; color: white;">
+  <h2 style="color: rgb(255, 253, 253); background: linear-gradient(to right, rgb(0, 0, 0), rgb(109, 109, 106),  rgb(0, 0, 0)); padding: 5px; border-radius: 5px; text-align: center;background-color: blue; color: gold;">
+    Pendidikan
+  </h2>
+  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+    <img src="kuliah.jpg" alt="Foto Kiri" width="250" style="border-radius: 10px;">
+    <img src="tk.jpg" alt="Foto Tengah" width="300" style="border-radius: 10px;">
+    <img src="Sma.jpg" alt="Foto Kanan" width="250" style="border-radius: 10px;">
+  </div>
+   <div style="height: 3px; width: 80%; margin: 30px auto; background: linear-gradient(to right, #000, #ccc, #000);"></div>
+
+ <table style="margin: auto; text-align: left;font-size: 18px;color: white;
+  background-image: url('hitam.jpg'); 
+  background-size: cover; background-position: center; border-radius: 15px;padding: 20px;box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  width: 80%;">
+    <tr><td><strong style="background-color: #333;">TK</strong></td><td>:</td><td >TK Semara Giri Kusuma</td></tr>
+    <tr><td><strong style="background-color: #333;">SD</strong></td><td>:</td><td>SDN 5 Muncan</td></tr>
+    <tr><td><strong style="background-color: #333;">SMP</strong></td><td>:</td><td>SMPN 1 Selat</td></tr>
+    <tr><td><strong style="background-color: #333;">SMA</strong></td><td>:</td><td>SMAN 1 Rendang</td></tr>
+    <tr><td><strong style="background-color: #333;">KULIAH</strong></td><td>:</td><td>Undiksha-Bali</td></tr>
+  </table>
+</section>
+
+<section id="hobi" style="background: url('back.avif') center/cover no-repeat; padding: 40px; border-radius: 15px; color: white; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="background: linear-gradient(to right, #111, #444); padding: 12px 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.5); font-size: 28px; color: gold;">Hobi</h2>
+
+  <!-- Galeri Hobi -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; font-family: 'Segoe UI', sans-serif;">
+
+  <!-- Kartu 1 -->
+  <div style="width: 280px; background: rgba(255,255,255,0.05); border-radius: 15px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.6); transition: transform 0.3s;">
+    <img src="12.jpg" alt="Hobi 2" width="100%" style="display: block;">
+    <div style="padding: 15px; color: white;">
+      <h3 style="margin: 0 0 10px 0; font-size: 18px;">2023-GOR GUNUNG AGUNG-KARANGASEM</h3>
+      <p style="margin: 0; font-size: 14px;">
+         Pengalaman membela sekolah dalam kejuaraan Bupati Cup, membawa nama baik RENSMA dan meraih juara 2,Suatu kebanggaan besar bagi diri saya sendiri karna bisa mengharumkan nama baik sekolah
+
+      </p>
+    </div>
+  </div>
+
+  <!-- Kartu 2 -->
+  <div style="width: 280px; background: rgba(255,255,255,0.05); border-radius: 15px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.6); transition: transform 0.3s;">
+    <img src="hobi2.jpg" alt="Hobi 2" width="100%" style="display: block;">
+    <div style="padding: 15px; color: white;">
+      <h3 style="margin: 0 0 10px 0; font-size: 18px;">2024-LAPANGAN UNDIKSHA-BALI</h3>
+      <p style="margin: 0; font-size: 14px;">
+        Bangga juga bisa bermain di lapangan undiksha ini dimana saya dipilih untuk mewakili jurusan teknik informatika,saya juga sangat bangga karna bisa mewakili jurusan teknik informatika,suatu kenangan yg tidak akan pernah saya lupakan
+      </p>
+    </div>
+  </div>
+
+  <!-- Kartu 3 -->
+  <div style="width: 280px; background: rgba(255,255,255,0.05); border-radius: 15px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.6); transition: transform 0.3s;">
+    <img src="hobi3.jpg" alt="Hobi 3" width="100%" style="display: block;">
+    <div style="padding: 15px; color: white;">
+      <h3 style="margin: 0 0 10px 0; font-size: 18px;">2022-LAPANGAN SMAN 1 SELAT</h3>
+      <p style="margin: 0; font-size: 14px;">
+      Suatu kebanggan juga bisa mewakili sekolah dalam pertandingan persahabatan antara SMAN 1 Rendang vs SMAN 1 Selat,saya sangat bangga bisa bermain di luar sekoalah,suatu kebanggan bagi diri saya
+  </div>
+
+</div>
+
+
+  <!-- Garis Pemisah -->
+  <div style="height: 4px; width: 90%; margin: 40px auto 30px; background: linear-gradient(to right, #000, #999, #000); border-radius: 2px;"></div>
+
+  <!-- Video Dokumentasi -->
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+    <h3 style="margin-bottom: 10px;">VIDIO DOKUMENTASI</h3>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+      <iframe width="300" height="180" src="https://www.youtube.com/embed/KeZUyZv1YTM" frameborder="0" allowfullscreen style="border-radius: 10px; box-shadow: 0 6px 12px rgba(0,0,0,0.6);"></iframe>
+      <iframe width="300" height="180" src="https://www.youtube.com/embed/oFanYV0NcJM" frameborder="0" allowfullscreen style="border-radius: 10px; box-shadow: 0 6px 12px rgba(0,0,0,0.6);"></iframe>
+
+  </div>
+
+  <!-- Garis Pemisah -->
+  <div style="height: 4px; width: 90%; margin: 40px auto 30px; background: linear-gradient(to right, #ccc, #333, #ccc); border-radius: 2px;"></div>
+
+  
+</section>
+
+
+<footer id="kontak" style="
+  background: url('hitam.jpg') center/cover no-repeat;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 -5px 10px rgba(0,0,0,0.5);
+">
+  <div style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 15px; display: inline-block;">
+    <h2 style="margin-bottom: 10px; color: rgb(35, 98, 166);">KONTAK & SOSIAL MEDIA</h2>
+    
+    
+     <!-- Tambahkan ini di bagian <head> untuk menggunakan ikon Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<p>
+   <i class="fas fa-envelope" style="color: #f9f504;"></i>
+  Email: <a href="mailto:ikomang856@gmail.com" style="color: #fffeff;">ikomang856@gmail.com</a>
+  <p>
+  <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+  Wa: <a href="https://wa.me/6283142730107" target="_blank" style="color:#25D366;">0831-4273-0107</a>
+</p>
+  <i class="fab fa-instagram" style="color:#e46640;"></i>
+  Instagram:
+  <a href="https://instagram.com/indraaajdw" target="_blank" style="color: #6a0aab;">@indraaajdw</a>
+</p>
+
+<p>
+  <i class="fab fa-tiktok" style="color:#fffefe;"></i>
+  TikTok:
+  <a href="https://tiktok.com/in/indraajayya" target="_blank" style="color: #727272;">@indraajayya</a>
+</p>
+
+    </p>
+  </div>
+</footer>
